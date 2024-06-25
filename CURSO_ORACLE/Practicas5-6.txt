@@ -1,0 +1,18 @@
+Select * from employees where department_id = 100;
+Select * from locations where country_id = 'US';
+Select * from countries where region_id = 3;
+select First_name ||' '||Last_name as Name, salary from employees where manager_id <> 114;
+Select * from employees where hire_date >= '01/01/2006';
+Select * from employees where JOB_ID = 'ST_CLERK';
+select * from employees where Last_name = 'Smith';
+
+Select * from employees where first_name like 'J%';
+Select * from employees where first_name like 'S%n';
+Select * from countries where country_name like '_r%';
+
+Select * from employees where department_id between 40 and 60;
+Select * from employees where hire_date between '01/01/2002' and '01/01/2004';
+Select * from employees where last_name between 'D%' and 'G%';
+Select * from employees where department_id in(30,60,90);
+Select * from employees where Job_id in ('IT_PROG','PU_CLERK');
+Select city,country_id from locations where country_id in('UK','JP');
